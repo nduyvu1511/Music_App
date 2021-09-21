@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --nav-width: 250px;
+    --nav-color: rgb(111,111,111);
+    --header-top: 60px;
+}
+
+.btn {
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66,19,15);
+    text-decoration: none;
+    height: 35px;
+    color: white;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#container{  
+    position:relative;
+    display:none;
+    padding: 10px;  
+}  
+  
+  #container span{  
+    width:3px;  
+    height: 5px;  
+    bottom:0px;
+    position:absolute;
+    background:#1db954;  
+    -webkit-animation: bodong 0.5s infinite  ease;  
+  }  
+  
+  #container span:first-child{  
+    left:0px;  
+    -webkit-animation-delay:.3s;  
+  }  
+  
+  #container span:nth-child(2){  
+    left:4px;  
+    -webkit-animation-delay:.4s;  
+  
+  }  
+  #container span:nth-child(3){  
+    left:8px;  
+    -webkit-animation-delay:.6s;  
+  }  
+  #container span:nth-child(4){  
+    left:12px;  
+    -webkit-animation-delay:.8s;  
+  }  
+  #container span:nth-child(5){  
+    left:16px;  
+    -webkit-animation-delay:1s;  
+  }  
+  
+  @-webkit-keyframes bodong{  
+      0%{height:5px; background:#1db954;}  
+      30%{height:15px; background: #1db954;}  
+    60%{height:20px; background: #1db954;}  
+    80%{height:15px; background: #1db954;}  
+    100%{height:5px; background: #1db954;}  
+  }
+                
